@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula de HTML - Vídeo</title>
+</head>
+
+<!-- Podemos definir também cores, para o fundo do meu site, e outras caracteristica usando códigos CSS no meu arquivo HTML-->
+
+<!-- Além de usarmos o nome das cores em ingles, podemos usar também a forma de definição de cor em rbg ou hexadecimal (no caso em hexa decimal a cor branca seria #FFFFFF)-->
+
+<body style="background-color: black; color: rgb(255, 255, 255);">
+
+    <!-- Aqui usamos também um atributo no caso usamos a tag div com o atributo id que podemos usar na maioria das tags do html -->
+
+    <div id="header">
+        <!-- Cabeçalho começa aqui -->
+
+        <!-- Na tag img "src" é uma tag que pega a "origem" da imagem ou de um conteúdo de audiovisual, seja de um diretório local, ou direto da internet-->
+
+        <!--Usamos também outro atributo chamado width para diminuir o tamanho da imagem adicionado-->
+        
+        <h1 style="display: inline;">Aula de HTML</h1>
+        <!-- No h1 acima usamos o atributo style para transformar a dimensão do título para ele ocupar o tamanho da linha -->
+        <img src="https://www.sptech.school/assets/images/logos/sptech_logo.png" alt="Logo da SPTech" width="200px"/>
+
+        <!-- Cabeçalho termina aqui -->
+    </div>
+
+    <!-- Aqui usamos novamente um código de CSS para mudar a posição da div abaixo -->
+    <div style="float: right;">
+        <!-- Na tag input podemos definir um tipo ou type para o nosso input sendo eles: text, password, number, etc-->
+        <input type="text" id="nome">
+        <!-- Aqui criamos um botão para chamar o valor do input acima, que no caso é o nome, dando uma função para esse botão no caso sendo dar oi + o nome da inserido -->
+        <button onclick="alert('Oi ' +nome.value)">Dizer oi</button>
+    </div>
+
+
+</body>
+
+</html>
